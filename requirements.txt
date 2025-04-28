@@ -2,3 +2,5 @@ flask
 spacy
 scikit-learn
 gunicorn
+python-docx
+PyMuPDF
