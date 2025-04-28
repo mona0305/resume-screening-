@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+</head>
+<body>
+    <h2>Job Recommendations</h2>
+    <table border="1">
+        <tr><th>Job Description</th><th>Match Score</th></tr>
+        {% for job, score in results %}
+        <tr>
+            <td>{{ job }}</td>
+            <td>{{ "{:.2f}".format(score) }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Upload Another Resume</a>
+</body>
+</html>
